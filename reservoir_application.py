@@ -3,9 +3,14 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-st.title("Dynamic Dynamic pressure profile")
+st.title("Reservoir Engineering Application")
 
-st.sidebar.title("Inputs")
+st.sidebar.title("User Inputs")
+
+application= st.sidebar.selectbox("select the Reservoir Application",
+                                 ("Pressure Profile", "Klinkenberg Effect"),)
+
+
 
 k = st.sidebar.slider("permeability (md)", min_value=10, max_value=200, value=100)
 
