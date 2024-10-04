@@ -31,7 +31,7 @@ if b:
     ax.plot(x,y_n,linewidth =4)
 
     ax.set_title("circle")
-    ax.set_xlim(-20,20)
-    ax.set_ylim(-20,20)
-
+    ax.set_xlim(-25,25)
+    ax.set_ylim(-25,25)
     st.pyplot(fig)
+
