@@ -1,7 +1,7 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-
+st.sidebar.title( "ECD Calc")
 st.subheader("ECD Calculator")
 st.sidebar.title("User Inputs")
 mw = st.sidebar.number_input("enter the mud weight value (ppg): ", value=9)
