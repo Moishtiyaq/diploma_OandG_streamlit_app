@@ -13,7 +13,7 @@ if application == "Pressure Profile":
 
     st.subheader("Pressure profile Application")
 
-    k = st.sidebar.slider("permeability (md)", min_value=10, max_value=200, value=100)
+    k = st.sidebar.slider("permeability (md)", min_value=10, max_value=200, value=10)
 
     mu = st.sidebar.slider("viscosity (cp)", min_value=10, max_value=50, value=15)
 
