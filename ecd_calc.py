@@ -1,9 +1,10 @@
-import numpy as np
 import streamlit as st
+import numpy as np
 import pandas as pd
 
-mw = float(input("enter the mud weight value (ppg): "))
-apl = float(input("enter the annular pressure loss value(psi): "))
-tvd = float(input("enter the true vertical depth (ft): "))
+st.subheader("ECD Calculator")
+mw = st.sidebar.number_input("enter the mud weight value (ppg): ")
+apl = st.sidebar.number_input("enter the annular pressure loss value(psi): ")
+tvd = st.sidebar.number_input("enter the true vertical depth (ft): ")
 ecd = ((apl/(0.052*tvd))+mw)
-print(f"the equivalent density on this tvd {tvd}ft is {ecd}")
+st.write(f"the equivalent density on this tvd {tvd}ft is {ecd}")
