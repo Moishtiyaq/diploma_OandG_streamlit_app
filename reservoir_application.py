@@ -59,7 +59,7 @@ if application == "Pressure Profile":
 elif application == "klinkenberg Effect":
     st.subheader("klinkenberg Effect")
 
-    kg = st.sidebar.number_input("Enter Gas Permeability(md)", min_value=1, max_value=200, value=50)
+    kg = st.sidebar.number_input("Enter Gas Permeability(md)", min_value=1, max_value=200, value=10)
     pm = st.sidebar.number_input("Enter the mean Pressure(psi)", min_value=1, max_value=10, value=4)
     k = st.sidebar.number_input("Enter the intial guess of absolute permeability(md)", min_value=1, max_value=1000, value=100)
 
